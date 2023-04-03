@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="UTF-8"/>
+        <link href="/css/style.css" rel="stylesheet" type="text/css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Login</title>
+</head>
+
+<body style = "background-color: #EEFBFB";>
+
+<center>
+<h1>KnowLo</h1>
+<p>Login to KnowLo here</p>
+<% if(messages.success_msg) { %>
+    <li><%= messages.success_msg %></li>
+    <% } %>
+
+    <% if(messages.error){%>
+        <%= messages.error %><% } %>
+</center>
+
+
+<form action="/users/login" method="POST">
+    <center>
+    <div>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Email"
+        required
+      />
+    </div>
+    <div>
+      <input
+        type="password"
+        id="password"
+        name="password"
+        placeholder="Password"
+        required
+      />
+    </div>
+    <div>
+      <input type="submit" value="Login"/>
+    </div>
+    <a href="/users/register">Don't have an account? Register here.</a>
+</center>
+
+    <style>
+        .footer {
+          position: fixed;
+          left: 0;
+          bottom: 0;
+          width: 100%;
+          height: 30px;
+          background-color: white;
+          color: white;
+          text-align: center;
+        }
+    </style>
+        <div class="footer">
+            <p><a href="/users/about"><h7>About KnowLo</h7></a></p>
+        </div>
+
+</body>
+</html>

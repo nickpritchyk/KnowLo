@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Paris</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="/css/bootstrap.css" rel="stylesheet">
+    <!--Bootshape -->
+    <link href="/css/bootshape.css" rel="stylesheet"> 
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	
+	<!-- <style>
+		#loader {
+			height: 100vh;
+			align-items: center;
+			display: flex;
+			justify-content: center;
+	
+		}
+	
+		.progress {
+			display: none;
+		}
+	
+		.errorMessage {
+			font-size: 34px;
+			height: 100vh;
+			align-items: center;
+			display: flex;
+			justify-content: center;
+		}
+  </style> -->
+  <style>
+    h1 {text-align: center;
+  font-weight: bold;
+  color: #fff;
+  font-size: 32px;
+}
+	p {text-align: center;}
+  div {text-align: center;}
+  
+  	body {
+      background-image: url('/img/bg.jpg');
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    }
+  
+  </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="/users/dashboard">
+          <img class="square" src="/img/logo.png" alt="home" width="30" height="30">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="/users/search">Travel<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/users/forum">Travel Forum</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/users/login">Sign in</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/users/about">About</a>
+            </li>
+          </ul>
+          <div class="form-inline my-2 my-lg-0">
+          <a class="btn btn-outline-light my-2 my-sm-0" href="/users/logout" type="submit">Logout</a>
+          </div>
+        </div>
+      </nav>
+  
+</div>
+
+<h1 style="font-family:Times;letter-spacing:5px;color:#000000;">Paris</h1>
+
+
+      <div class="container">
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+          </ol>
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+            <div class="item active">
+              <img src="/img/par1.jpg" alt="">
+              <div class="carousel-caption">
+              </div>
+            </div>
+            <div class="item">
+              <img src="/img/par2.webp" alt="">
+              <div class="carousel-caption">
+              </div>
+            </div>
+            <div class="item">
+              <img src="/img/par3.jpg" alt="">
+              <div class="carousel-caption">
+              </div>
+            </div>
+          </div>
+          <!-- Controls -->
+          <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+          </a>
+          <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+          </a>
+        </div>
+        </div>
+      </div>
+    
+
+    <div class="container thumbs">
+      <div class="col-sm-6 col-md-4">
+        <div class="thumbnail">
+          <img src="/img/parishome1.jpg" alt="" class="img-responsive" style="width: 100%">
+          <div class="caption">
+            <h3 class="">What To Do</h3>
+            <p>Paris has an amazing city that could take a lifetime to see in depth, there are many free walking tours that can help orient yourself with the city. Something a little more unique would be taking a Paris sewer system tour. Here you can learn the interesting history of how Paris transformed into the modern city we see now.</p>
+            
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <div class="thumbnail">
+          <img src="/img/parishome2.jpg" alt="" class="img-responsive"style="width: 100%">
+          <div class="caption">
+            <h3 class="">What To See</h3>
+            <p>The eiffel tower is a beautiful piece of architecture that is considered a must seen upon visiting Paris. In a close second the Louvre has artwork that is unlike any other. As a bonus there's another museum, the d’Orsay, which is a home to many famous artists such as Monet and Van Gogh.</p>
+          </div>
+        </div>
+      </div>
+      
+      </div>
+    </div>
+	
+ 
+      </div>
+    </div>
+    <script src="/js/jquery.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+	
+	<div class="container">
+		
+		<div class="row">
+			<div id="newsReturn"></div>
+		</div>
+	
+		<div id="loader">
+			<div class="progress">
+				<div class="indeterminate"></div>
+			</div>
+		</div>
+	
+	</div>
+<!-- 	
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	  -->
+	<script src="/js/jquery-3.3.1.min.js"></script>
+	
+	<script src="/js/app2.js"></script>
+  </body>
+</html>

@@ -1,0 +1,15 @@
+body {
+    background-image: url('/img/bg.jpg');
+	font-family: 'Times New Roman', Times, serif;
+	color: black;
+    text-align: center;
+}
+
+h1{font-family: 'Times New Roman', Times, serif;
+	color: black;
+	margin: 0;
+	padding: 0px 0px 6px 0px;
+	font-size: 51px;
+	line-height: 44px;
+	letter-spacing: -2px;
+	font-weight: bold;}

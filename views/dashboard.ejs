@@ -1,0 +1,113 @@
+<!-- About Page -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <title>Welcome to KnowLo!</title>
+	<link rel='icon' href='../resources/img/favicon.ico' type='image/x-icon'/>
+    <!-- Bootstrap core CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+	<link href="../resources/css/my_style.css" rel="stylesheet">
+  </head>
+  <style>
+  	h1 {text-align: center;}
+	p {text-align: center;}
+	div {text-align: center;}
+	
+  	body {
+    background-image: url('/img/bg.jpg');
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    }
+    .carousel {
+      overflow: hidden;
+    }
+  
+  </style>
+  <body>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+	  <a class="navbar-brand" href="/users/dashboard">
+		<img class="square" src="/img/logo.png" alt="home" width="30" height="30">
+	  </a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	  </button>
+	  <div class="collapse navbar-collapse" id="navbarText">
+		<ul class="navbar-nav mr-auto">
+		  <li class="nav-item">
+			<a class="nav-link" href="/users/search">Travel</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="/users/forum">Location Forum</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="/users/about">About</a>
+		  </li>
+		</ul>
+		<div class="form-inline my-2 my-lg-0">
+				<a class="btn btn-outline-light my-2 my-sm-0" href="/users/logout" type="submit">Logout</a>
+		</div>
+	  </div>
+	</nav>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 offset-3">
+				<div class="jumbotron">
+					<h1 class="center">Welcome to KnowLo <%= user %></h1>
+					<h3>Know where you go!</h3>
+				</div>
+		</div>
+		<div>
+			<div id="carouselMainIndicators" class="carousel slide" data-ride="carousel">
+  				<ol class="carousel-indicators">
+    					<li data-target="#carouselMainIndicators" data-slide-to="0" class="active"></li>
+    					<li data-target="#carouselMainIndicators" data-slide-to="1"></li>
+    					<li data-target="#carouselMainIndicators" data-slide-to="2"></li>
+ 	 				</ol>
+  					<div class="carousel-inner">
+    					<div class="carousel-item active">
+                <a href="/users/search">
+      					  <img class="d-block w-100" src="/img/Paris.jpg" alt="Travel!" height="600">
+      					  <div class="carousel-caption d-none d-md-block">
+    							  <h5>Travel with Us!</h5>
+    							  <p>We'll make sure that we can track the news of where you go!</p>
+  							  </div>
+                </a>
+        			</div>
+    					<div class="carousel-item">
+                <a href="/users/login">
+    							<img class="d-block w-100" src="/img/Hotel.jpg" alt="Sign up" height="600">
+    							<div class="carousel-caption d-none d-md-block">
+  								  <h5>Sign Up!</h5>
+                    <p>Join us with an account today!</p>
+  								</div>
+                </a>
+    					</div>
+    					<div class="carousel-item">
+                <a href="/users/forum">
+      						<img class="d-block w-100" src="/img/Plane.jpg" alt="Planned Trips" height="600">
+      						<div class="carousel-caption d-none d-md-block">
+    							  <h5>Look at KnowLo Discussion Forums!</h5>
+    							  <p>View other KnowLo users questions and answers on the forums!</p>
+  							  </div>
+                </a>
+  						</div>
+  					</div>
+  					<a class="carousel-control-prev" href="#carouselMainIndicators" role="button" data-slide="prev">
+    					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    					<span class="sr-only">Previous</span>
+  					</a>
+  					<a class="carousel-control-next" href="#carouselMainIndicators" role="button" data-slide="next">
+    					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+    					<span class="sr-only">Next</span>
+  					</a>
+				</div>
+			</div>
+		</div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+</body>
+</html>
